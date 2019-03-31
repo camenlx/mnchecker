@@ -49,10 +49,10 @@ userDirName = ".mnchecker"
 
 #==========================================================
 # Currency defaults
-defaultCurrencyHandle = "vivo"
-defaultCliBin = "/usr/local/bin/vivo-cli"
-defaultDaemonBin = "/usr/local/bin/vivod"
-defaultDataDir = os.path.join(os.path.abspath(os.path.expanduser("~")), ".vivocore")
+defaultCurrencyHandle = "lucky"
+defaultCliBin = os.path.join(os.path.abspath(os.path.expanduser("~")), "luckybit/luckybit-cli")
+defaultDaemonBin = os.path.join(os.path.abspath(os.path.expanduser("~")), "luckybit/luckybitd")
+defaultDataDir = os.path.join(os.path.abspath(os.path.expanduser("~")), ".luckybitcore")
 
 #==========================================================
 # Explorer URL
@@ -60,7 +60,8 @@ defaultDataDir = os.path.join(os.path.abspath(os.path.expanduser("~")), ".vivoco
 #=============================
 # chainz.cryptoid.info
 # NOTE: For this explorer, you'll have to set the user agent to "Mozilla/5.0" further below.
-defaultBlockExplorerBlockCountUrlTemplate = "http://chainz.cryptoid.info/{currencyHandle}/api.dws?q=getblockcount"
+#defaultBlockExplorerBlockCountUrlTemplate = "http://chainz.cryptoid.info/{currencyHandle}/api.dws?q=getblockcount"
+defaultBlockExplorerBlockCountUrlTemplate = "http://178.128.183.181:3001/api/getblockcount"
 
 #=============================
 # vivo.explorerz.top:3003
